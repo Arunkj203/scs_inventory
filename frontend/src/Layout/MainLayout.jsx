@@ -7,7 +7,7 @@ const MainLayout = () => {
 		<main>
 			<Header />
 			<Outlet />
-			<Footer />
+			{/* <Footer /> */}
 		</main>
 	);
 };

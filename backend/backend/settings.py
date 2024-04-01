@@ -12,6 +12,12 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
+
+import os
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import firestore
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,7 +31,7 @@ SECRET_KEY = "django-insecure-g6lrmcs46i^w23+qmt9tqszd(amt*e$snpl9-8tr8innqfr4aj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -44,6 +50,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -56,7 +63,7 @@ ROOT_URLCONF = "backend.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR.parent,"frontend/dist")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -117,9 +124,34 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "assets/"
+
+# STATIC_ROOT = os.path.join(BASE_DIR.parent, 'frontend/dist/assets')
+
+STATICFILES_DIRS = [ 
+    os.path.join(BASE_DIR.parent,"frontend/dist/assets")
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    "http://127.0.0.1:3000",
+    "http://192.168.1.110:8000",
+    "http://192.168.1.131:8000",
+    "http://127.0.0.1:3001",
+    "http://localhost:3001",
+    "http://localhost:5173",
+    "https://login.microsoftonline.com"
+]
+
+
+FIREBASE_CONFIG = os.path.join(BASE_DIR, 'backend//Firebase-config.json')
+cred = credentials.Certificate(FIREBASE_CONFIG)
+app = firebase_admin.initialize_app(cred)

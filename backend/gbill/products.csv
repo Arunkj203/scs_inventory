@@ -1,0 +1,101 @@
+product_id,product_name,quantity_in_stock,unit_price,expiration_date,supplier_name,category,location_in_warehouse,last_restock_date,is_discontinued
+1,Scotch - Queen Anne,248,173.52,2/11/2023,Ozu,Electronics,70 Scoville Plaza,2/19/2022,true
+2,Easy Off Oven Cleaner,767,503.82,9/17/2023,Browsedrive,Electronics,9 Gina Pass,6/1/2022,true
+3,Chips Potato Reg 43g,1000,753.83,4/11/2022,Oloo,Clothing,9066 Goodland Point,5/31/2023,false
+4,Pan Grease,913,154.26,8/8/2023,Tagtune,Clothing,518 Nova Drive,9/10/2022,true
+5,Beef - Rib Eye Aaa,981,384.67,3/21/2023,Leenti,Electronics,068 Roxbury Trail,3/21/2022,false
+6,Beef - Top Sirloin,667,13.31,1/16/2022,Linklinks,Home Goods,5 Sauthoff Park,8/16/2023,false
+7,Soho Lychee Liqueur,884,174.13,7/19/2023,Bubbletube,Home Goods,2783 Columbus Trail,8/24/2022,false
+8,Truffle Paste,553,276.95,5/21/2022,Bluezoom,Electronics,4283 Reinke Trail,9/25/2022,false
+9,Bread Sour Rolls,576,409.92,3/2/2023,Thoughtbridge,Clothing,544 Elka Trail,6/4/2022,false
+10,Wine - Conde De Valdemar,848,113.99,8/2/2022,Quatz,Clothing,1640 Raven Place,1/29/2022,false
+11,Pears - Bosc,175,687.76,7/13/2022,Yodo,Clothing,1883 Manley Crossing,4/29/2022,true
+12,Beans - Kidney White,468,788.94,1/2/2023,Quatz,Electronics,9 Rigney Hill,2/17/2022,true
+13,Duck - Breast,3,292.92,12/25/2022,Fivespan,Electronics,5 Fair Oaks Crossing,9/27/2023,false
+14,"Chicken - Breast, 5 - 7 Oz",222,480.53,12/26/2022,Zoonder,Electronics,7218 Hermina Parkway,11/26/2023,false
+15,Veal - Knuckle,718,279.22,11/23/2023,Voomm,Clothing,2414 Independence Center,12/25/2023,true
+16,Lady Fingers,834,344.53,6/2/2022,Dabvine,Clothing,497 Hudson Drive,5/20/2022,true
+17,"Soup - Knorr, Country Bean",158,507.77,11/3/2023,Babbleblab,Clothing,1284 Atwood Way,11/27/2023,true
+18,Sauce Tomato Pouch,696,158.16,4/5/2023,Thoughtstorm,Electronics,72659 Cordelia Parkway,4/14/2022,true
+19,Wine - Rioja Campo Viejo,332,248.36,1/31/2023,Fanoodle,Clothing,7 Bluestem Drive,9/15/2023,true
+20,Rice - Wild,259,789.32,12/18/2023,Meembee,Clothing,154 Packers Trail,8/26/2022,false
+21,"Cup - 3.5oz, Foam",749,308.73,10/1/2023,Aimbo,Home Goods,66078 Pleasure Drive,5/4/2022,false
+22,Knife Plastic - White,772,970.08,4/18/2022,Jatri,Clothing,83711 Huxley Terrace,3/7/2023,false
+23,Fib N9 - Prague Powder,167,23.78,10/25/2023,Zoomlounge,Home Goods,3 Corry Trail,3/3/2023,true
+24,Chicken - Tenderloin,18,439.63,6/17/2022,Yotz,Electronics,459 Little Fleur Avenue,6/29/2023,true
+25,Pork - Backs - Boneless,785,948.37,8/20/2023,Dabfeed,Electronics,952 Karstens Hill,2/19/2022,false
+26,Numi - Assorted Teas,221,849.97,4/14/2022,Jatri,Home Goods,4 Manitowish Crossing,5/7/2023,true
+27,"Lettuce - Mini Greens, Whole",535,131.1,8/14/2022,Avamm,Home Goods,8 Shoshone Parkway,8/13/2023,false
+28,Soup - Campbells - Tomato,207,898.33,1/12/2022,Kwideo,Home Goods,99 Anhalt Place,11/13/2022,false
+29,Chicken - Base,351,797.96,8/6/2022,Trilia,Electronics,1 Hoard Avenue,5/17/2022,true
+30,"Nut - Walnut, Chopped",638,405.62,12/30/2022,Skippad,Home Goods,3 Kim Alley,7/13/2022,true
+31,Flower - Commercial Bronze,680,855.88,3/18/2023,Mita,Electronics,6 Fordem Circle,2/7/2023,false
+32,Beer - Maudite,834,895.94,6/11/2023,Youbridge,Clothing,2 Sachs Junction,8/28/2022,false
+33,Bagel - Everything,797,580.15,8/24/2023,Aimbu,Home Goods,188 Hanson Hill,10/29/2023,true
+34,Egg - Salad Premix,861,691.33,7/10/2023,Voonix,Clothing,732 Sunfield Park,7/7/2022,true
+35,Cheese - Goat,230,73.88,10/1/2023,Realcube,Home Goods,776 Superior Way,7/9/2023,false
+36,Magnotta - Bel Paese White,565,458.63,12/18/2022,Shuffletag,Electronics,760 Hermina Terrace,11/30/2023,false
+37,Ecolab Silver Fusion,0,872.12,8/28/2022,Realbridge,Electronics,2 Sheridan Circle,7/9/2022,false
+38,"Coconut - Shredded, Sweet",622,711.58,11/6/2023,Talane,Clothing,14611 Crescent Oaks Park,10/17/2022,false
+39,Extract - Rum,129,507.95,4/2/2022,Trilith,Clothing,67081 Larry Park,3/26/2023,true
+40,"Asparagus - Green, Fresh",781,669.05,4/10/2022,Zoomzone,Home Goods,84 New Castle Parkway,8/4/2023,true
+41,Pepper - Green Thai,254,789.06,2/22/2022,Skynoodle,Electronics,560 Pawling Court,2/16/2023,false
+42,Table Cloth 53x69 White,822,631.92,1/16/2023,Oba,Clothing,8 Duke Pass,1/17/2022,true
+43,Eggplant Oriental,640,22.46,3/10/2022,Brightdog,Clothing,3667 Ohio Center,6/25/2022,false
+44,Liners - Baking Cups,365,751.93,11/26/2023,Topdrive,Home Goods,4 Dapin Avenue,3/13/2022,true
+45,Veal - Osso Bucco,723,452.73,2/27/2022,Brightbean,Home Goods,08 Eliot Place,11/18/2022,false
+46,Wine - Prosecco Valdobienne,678,7.23,9/18/2022,Dabjam,Electronics,624 Starling Alley,4/2/2023,true
+47,"Juice - V8, Tomato",194,392.32,5/14/2023,Jetpulse,Electronics,86 Swallow Alley,2/20/2022,true
+48,Veal - Slab Bacon,902,564.76,6/24/2023,Meeveo,Clothing,6 Tennyson Road,2/4/2023,true
+49,Muffin Mix - Morning Glory,410,862.72,9/21/2022,Wordtune,Clothing,63830 Cascade Place,10/18/2022,true
+50,Garlic - Peeled,267,300.02,10/28/2023,Cogibox,Clothing,23128 Union Park,4/5/2022,true
+51,Appetizer - Crab And Brie,435,408.15,8/30/2023,Yambee,Clothing,586 Pleasure Park,10/28/2022,true
+52,Straw - Regular,339,58.95,8/16/2023,Bubblemix,Clothing,708 Judy Plaza,1/10/2022,false
+53,Muffin Mix - Lemon Cranberry,816,554.51,12/17/2022,Dabvine,Electronics,838 Mcbride Terrace,4/1/2022,true
+54,Plaintain,458,138.28,9/11/2023,Babbleset,Electronics,9234 Roth Junction,4/14/2023,true
+55,Wine - Vovray Sec Domaine Huet,13,164.63,11/7/2022,Shufflester,Home Goods,276 Oneill Hill,2/16/2022,false
+56,Banana - Leaves,473,816.57,2/12/2022,Meevee,Home Goods,835 Dixon Hill,2/15/2023,true
+57,Syrup - Monin - Blue Curacao,558,478.49,11/8/2023,Plambee,Electronics,2494 West Circle,3/16/2023,true
+58,Chocolate Liqueur - Godet White,178,332.38,4/19/2022,Topiczoom,Clothing,4423 Wayridge Lane,5/23/2023,true
+59,Eggs - Extra Large,202,277.37,10/7/2022,Jazzy,Home Goods,2 Shasta Junction,9/8/2023,false
+60,Potato - Sweet,561,58.18,9/7/2023,Aimbu,Electronics,314 Anhalt Pass,10/23/2022,false
+61,Wasabi Paste,490,930.74,6/26/2023,Bluezoom,Electronics,28 Upham Park,7/7/2023,false
+62,Grenadillo,275,456.29,11/18/2023,Omba,Electronics,6 Miller Drive,3/18/2022,false
+63,Knife Plastic - White,185,155.12,6/1/2023,Fivechat,Home Goods,77393 1st Park,11/4/2022,true
+64,"Bag - Bread, White, Plain",428,719.49,5/2/2023,Trupe,Electronics,4178 Saint Paul Parkway,2/1/2023,false
+65,Sugar - Fine,5,567.25,6/20/2023,Blogspan,Clothing,74152 Eagle Crest Center,5/22/2022,true
+66,Sobe - Berry Energy,935,268.02,5/28/2022,Podcat,Electronics,755 Morning Way,2/26/2022,false
+67,Sword Pick Asst,931,135.91,1/16/2022,Brightbean,Electronics,60 Hoepker Avenue,8/8/2022,true
+68,"Rosemary - Primerba, Paste",407,891.89,5/28/2023,Avavee,Electronics,93 Kennedy Point,1/4/2023,true
+69,Scallops - 20/30,9,850.52,8/7/2022,Devify,Home Goods,7002 Green Crossing,4/18/2022,true
+70,Vaccum Bag 10x13,366,157.84,9/12/2022,Digitube,Electronics,539 Londonderry Street,5/28/2023,false
+71,Pasta - Canelloni,301,922.25,4/11/2022,Dazzlesphere,Home Goods,1527 Stone Corner Circle,10/5/2023,false
+72,Veal - Slab Bacon,520,943.81,8/24/2022,Aimbo,Home Goods,756 Cherokee Parkway,6/28/2023,false
+73,Extract - Rum,692,428.74,9/11/2023,Topicware,Electronics,6 Reindahl Park,12/2/2023,false
+74,Cardamon Ground,191,233.37,8/8/2023,Vimbo,Clothing,95927 Elgar Terrace,6/8/2023,true
+75,Veal - Heart,626,583.29,12/3/2022,Yakijo,Clothing,03 Memorial Court,5/19/2022,true
+76,Wine - Sawmill Creek Autumn,177,975.11,4/16/2022,Avavee,Clothing,120 Maywood Avenue,9/12/2023,true
+77,Aromat Spice / Seasoning,584,199.84,7/13/2023,Babblestorm,Clothing,2944 Washington Hill,12/4/2022,false
+78,Table Cloth 62x120 White,389,676.83,7/13/2022,Avavee,Clothing,80616 Bay Alley,8/19/2022,false
+79,Chips Potato Reg 43g,661,305.77,1/20/2022,Skinix,Clothing,69 Messerschmidt Lane,4/21/2022,true
+80,"Chocolate - Milk, Callets",266,923.37,12/7/2023,Eare,Electronics,3 Pond Avenue,2/23/2023,false
+81,Lettuce - Red Leaf,138,991.57,4/4/2023,Skinder,Home Goods,5 Stang Trail,10/6/2023,true
+82,"Wine - White, Schroder And Schyl",586,461.12,2/14/2023,Lajo,Home Goods,4 Muir Road,7/6/2022,false
+83,Squid - Breaded,273,901.57,6/28/2023,Skyndu,Electronics,918 Troy Parkway,7/23/2023,false
+84,Cheese - Bocconcini,589,798.7,4/11/2023,Trilia,Home Goods,26 Melrose Point,6/28/2023,false
+85,Corn Kernels - Frozen,768,943.06,1/29/2022,Aimbu,Home Goods,25 Havey Lane,5/8/2022,false
+86,Grenadillo,622,947.79,9/30/2023,Tagopia,Electronics,201 Bultman Lane,9/18/2023,true
+87,Radish,424,713.94,10/14/2022,Edgeclub,Electronics,53576 Washington Parkway,2/15/2022,true
+88,Longos - Grilled Salmon With Bbq,884,570.21,5/22/2023,Gigashots,Clothing,5932 Judy Drive,12/23/2023,true
+89,Cherries - Fresh,836,76.84,11/7/2022,Oyoba,Electronics,2592 Vahlen Place,3/24/2023,true
+90,Sauce - Soy Low Sodium - 3.87l,163,808.78,7/5/2023,Kare,Clothing,93709 Schurz Terrace,8/16/2022,true
+91,Cake - Mini Potato Pancake,770,781.62,12/30/2022,Linkbridge,Electronics,917 Schlimgen Crossing,2/3/2023,false
+92,Bread - Onion Focaccia,510,723.17,4/9/2023,Skyvu,Home Goods,9 Claremont Center,8/3/2022,false
+93,"Corn - Cream, Canned",272,50.27,8/26/2023,Zazio,Clothing,10275 Texas Place,8/17/2022,true
+94,Rice - Basmati,433,662.42,6/7/2023,Wordtune,Clothing,75457 Loftsgordon Point,9/9/2022,false
+95,"Rum - Cream, Amarula",589,217.24,5/11/2023,Voonte,Clothing,6 Memorial Parkway,4/5/2023,true
+96,Pants Custom Dry Clean,432,678.42,5/5/2023,Gabvine,Electronics,1044 Stang Point,6/7/2023,true
+97,Lambcasing,366,543.29,11/28/2022,Zoonoodle,Electronics,6 Hanover Crossing,2/8/2022,true
+98,"Salmon - Whole, 4 - 6 Pounds",916,232.15,6/10/2023,Tambee,Home Goods,42 Michigan Lane,5/10/2022,true
+99,Energy Drink,55,483.02,6/14/2023,Cogilith,Electronics,539 Judy Pass,1/18/2022,true
+100,Wine - Semi Dry Riesling Vineland,972,624.56,11/23/2022,Buzzster,Clothing,0 Lyons Point,8/7/2023,false
