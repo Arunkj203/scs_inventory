@@ -1,0 +1,154 @@
+/* #show {
+  width: 150px;
+  height: auto;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 40%;
+}
+
+#logout {
+  width: 150px;
+  height: auto;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 60%;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Blinker&display=swap');
+
+.userupdate {
+  height: 100%;
+  width: 100%;
+}
+
+.userupdate .title {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  font-family: "Blinker",sans-serif;
+}
+
+.userupdate .emp-container {
+  height: calc(100% - 100px);
+  width: 100%;
+  display: flex;
+}
+
+.emp-container .details {
+  height: 100%;
+  width: 100%;
+}
+
+.form-user {
+  height: 500px;
+  width: 95%;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  overflow-y: scroll;
+  flex: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 20px;
+}
+
+/* #1D9DF7 */
+
+/* #7BE2FB */
+
+/* #CCF9FF */
+
+.form-user::-webkit-scrollbar {
+  width: 0px;
+}
+
+.form-user .header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-user .header h1 {
+  font-size: 27px;
+  margin: 10px 0;
+  font-weight: 650;
+  color: slateblue;
+  border-bottom: 2px solid slateblue;
+}
+
+.form-user .form-field {
+  height: 80px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 25px 0;
+  color: #a70031;
+
+}
+
+.form-user .form-field .MuiTextField-root {
+  width: 90%;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: #888;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.form-user .form-field .MuiSvgIcon-root {
+  font-size: 35px;
+  color: slateblue;
+}
+
+.form-user .form-field-btn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.form-user .form-field-btn .MuiButton-root,
+.form-user .form-field-btn button {
+  background-color: rebeccapurple;
+  color: white;
+  margin: 0 20px;
+}
+.add-btn {
+  cursor: pointer;
+  position: fixed;
+  margin: 30px;
+  background-color: #a70031;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+.add-btn .MuiIconButton-root {
+  color: #fff;
+}
+
+
+
+
+
+.table-container{
+  width: 90%;
+  margin: 10px auto;
+  overflow-x: auto;
+}
+
+.table-container table{
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+}
+

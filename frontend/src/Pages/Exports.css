@@ -1,0 +1,369 @@
+/*
+.exports {
+  height: 100%;
+  width: 100%;
+  background: url("../images/background1.jpeg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.exports .select-items {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.select-items .textfield {
+  height: 50%;
+  width: 70%;
+  min-width: 250px;
+}
+
+.textfield .MuiTextField-root{
+  height: 100%;
+  width: 100%;
+}
+
+.select-items .inputs {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+
+.list-items .MuiList-root {
+  height: 200px;
+  width: 65%;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid black;
+  overflow-y: auto;
+}
+
+.MuiList-root .MuiListItemButton-root {
+  width: 100%;
+  height: fit-content;
+  border-bottom: 1px solid black;
+}
+
+.MuiList-root .MuiListItemButton-root:hover {
+  background-color: rgba(128, 128, 128, 0.193);
+} */
+
+/*
+
+.textfield .MuiTextField-root {
+  height: 80%;
+  width: 100%;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+
+
+.exports .selected-items {
+  height: 300px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.selected-items table {
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+tr {
+  height: 50px;
+}
+
+tr th,
+td {
+  padding: 10px auto;
+}
+
+tr .MuiTextField-root {
+  height: 100%;
+  width: 100%;
+}
+
+.exports .genrate-button {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/* 
+.exports {
+  height: 100%;
+  width: 100%;
+}
+
+.exports .select-items {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.select-items .inputs {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inputs .textfield {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+}
+
+.textfield .MuiTextField-root {
+  width: 80%;
+  margin: 0 10%;
+}
+
+.inputs .generate-button {
+  width: 100%;
+  height: 100%;
+}
+
+.list-items .MuiList-root {
+  height: 200px;
+  width: 65%;
+  z-index: 100;
+  border: 1px solid black;
+  overflow-y: auto;
+}
+
+.MuiList-root .MuiListItemButton-root {
+  width: 100%;
+  height: fit-content;
+  border-bottom: 1px solid black;
+}
+
+.MuiList-root .MuiListItemButton-root:hover {
+  background-color: rgba(128, 128, 128, 0.193);
+}
+
+.exports .selected-items {
+  height: 400px;
+  width: 100%;
+  overflow-y: scroll;
+  border: 1px solid black;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.selected-items table {
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+tr {
+  height: 50px;
+}
+
+tr th,
+td {
+  padding: 10px auto;
+}
+
+tr .MuiTextField-root {
+  height: 100%;
+  width: 100%;
+} */
+
+.exports {
+  height: 100%;
+  width: 100%;
+}
+
+.exports .select-items {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.inputs .textfield {
+  height: 100%;
+  width: 70%;
+  margin: 0 20px;
+}
+
+.textfield .MuiTextField-root {
+  width: 500px;
+
+  background-color: white;
+  border-radius: 20px;
+}
+
+tr {
+  height: 50px;
+}
+
+tr th,
+tr td {
+  padding: 10px auto;
+  text-align: center;
+}
+
+tr .MuiTextField-root {
+  height: 100%;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: white;
+  text-align: center;
+}
+
+.list-items .MuiList-root {
+  width: 95%;
+  height: 300px;
+  max-width: 500px;
+  margin: 0 20px;
+  border: 1px solid black;
+  overflow-y: auto;
+  background-color: aliceblue;
+}
+.MuiListItemButton-root .MuiListItemText-root {
+  display: flex;
+  justify-content: space-between;
+}
+.MuiList-root .MuiListItemButton-root {
+  width: 100%;
+  height: fit-content;
+  border-bottom: 1px solid black;
+}
+
+.MuiList-root .MuiListItemButton-root:hover {
+  background-color: rgba(128, 128, 128, 0.193);
+}
+
+.exports .selected-items {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.selected-items table {
+  width: 90%;
+  margin: 0 auto;
+}
+.generate-button {
+  width: 100%;
+  margin: 20px;
+}
+
+.generate-button button {
+  outline: none;
+  height: 40px;
+  /* text-align: center; */
+  width: 140px;
+  border-radius: 15px;
+  background: #fff;
+  border: 2px solid #1ecd97;
+  color: #1ecd97;
+  letter-spacing: 1px;
+  text-shadow: 0;
+
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 17px;
+  justify-content: space-around;
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", */
+  /* "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.generate-button button:hover {
+  color: #1ecd97;
+  background: rgb(243, 233, 233);
+}
+
+.generate-button button:active {
+  letter-spacing: 2px;
+}
+
+/* .generate-button button:after {
+  content: "Generate";
+} */
+
+.generate-button button.onclic {
+  width: 40px;
+  border-color: #bbbbbb;
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #1ecd97;
+  /* animation: rotating 2s 0.25s linear infinite; */
+}
+
+.generate-button button.onclic:hover {
+  color: #1ecd97;
+  background: white;
+}
+
+.generate-button button.validate {
+  font-size: 13px;
+  color: white;
+  background: #1ecd97;
+}
+
+/* .generate-button button.validate:after {
+  font-family: "FontAwesome";
+  content: "\f00c";
+} */
+
+/* @keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.MuiTextField-root{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}

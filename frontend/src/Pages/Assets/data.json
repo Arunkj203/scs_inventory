@@ -1,0 +1,18 @@
+[
+    {
+        "asset_id": "AS123456",
+        "state": "California",
+        "location": "San Francisco",
+        "customer": "ABC Corporation",
+        "asset": "Computer",
+        "type": "Desktop",
+        "category": "Electronics",
+        "make_model": "123456",
+        "asset_serial_no": "789012",
+        "working_status": "Functional",
+        "usable_stock_status": "Available",
+        "remarks": "No issues found during audit.",
+        "date": "2023-10-15",
+        "name_of_audit_person": "John Doe"
+    }
+]
