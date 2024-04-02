@@ -24,9 +24,11 @@ import Select from "@mui/material/Select";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 
-function ShowAssets() {
+function ShowAssets({ load_data, setShow }) {
 
     const [action, setAction] = useState("");
+
+    const [search, setSearch] = useState("");
     const [user, setUser] = useState();
     const [users, setUsers] = useState();
 
@@ -55,185 +57,7 @@ function ShowAssets() {
         if (action === "") {
             return <div></div>;
         }
-        if (action === "add-emp") {
-            return (
-                <div className="form-user">
-                    <div className="header">
-                        <h1>ADD Asset</h1>
-                    </div>
-
-                    <div className="form-field">
-                        <TextField
-                            disabled
-                            type="text"
-                            label="Asset ID"
-                            value={assetId}
-                        />
-                    </div>
-
-                    <div className="form-field">
-                        <TextField
-                            type="text"
-                            label="State"
-
-                            onChange={(e) => {
-                                setState(e.target.value);
-                            }}
-                        />
-                    </div>
-
-                    <div className="form-field">
-                        <TextField
-                            type="text"
-                            label="Location"
-
-                            onChange={(e) => {
-                                setLocation(e.target.value);
-                            }}
-                        />
-                    </div>
-
-                    <div className="form-field">
-                        <TextField
-                            type="text"
-                            label="Customer"
-
-                            onChange={(e) => {
-                                setCustomer(e.target.value);
-                            }}
-                        />
-                    </div>
-
-                    <div className="form-field">
-                        <TextField
-                            type="text"
-                            label="Asset"
-
-                            onChange={(e) => {
-                                setAsset(e.target.value);
-                                setAssetId(e.target.value.slice(0, 3) + aid)
-                            }}
-                        />
-                    </div>
-
-                    <div className="form-field">
-                        <TextField
-                            type="text"
-                            label="Type"
-
-                            onChange={(e) => {
-                                setType(e.target.value);
-                            }}
-                        />
-                    </div>
-
-                    <div className="form-field">
-                        <TextField
-                            type="text"
-                            label="Category"
-
-                            onChange={(e) => {
-                                setCategory(e.target.value);
-                            }}
-                        />
-                    </div>
-
-                    <div className="form-field">
-                        <TextField
-                            type="text"
-                            label="Make Model"
-
-                            onChange={(e) => {
-                                setMakeModel(e.target.value);
-                            }}
-                        />
-                    </div>
-
-                    <div className="form-field">
-                        <TextField
-                            type="text"
-                            label="Asset Serial No"
-
-                            onChange={(e) => {
-                                setAssetSerialNo(e.target.value);
-                            }}
-                        />
-                    </div>
-
-                    <div className="form-field">
-                        <TextField
-                            type="text"
-                            label="Working Status"
-
-                            onChange={(e) => {
-                                setWorkingStatus(e.target.value);
-                            }}
-                        />
-                    </div>
-
-                    <div className="form-field">
-                        <TextField
-                            type="text"
-                            label="Usable Stock Status"
-
-                            onChange={(e) => {
-                                setUsableStockStatus(e.target.value);
-                            }}
-                        />
-                    </div>
-
-                    <div className="form-field">
-                        <TextField
-                            type="text"
-                            label="Remarks"
-
-                            onChange={(e) => {
-                                setRemarks(e.target.value);
-                            }}
-                        />
-                    </div>
-
-                    <div className="form-field">
-                        {/* <InputLabel>Date</InputLabel> */}
-                        <TextField
-                            type="date"
-                            label="date"
-                            InputLabelProps={{
-                                shrink: true,
-                            }}
-
-                            onChange={(e) => {
-                                setDate(e.target.value);
-                            }}
-                        />
-                    </div>
-
-                    <div className="form-field">
-                        <TextField
-                            type="text"
-                            label="Name of Audit Person"
-
-                            onChange={(e) => {
-                                setAuditPersonName(e.target.value);
-                            }}
-                        />
-                    </div>
-
-
-                    <div className="form-field-btn">
-                        <Button onClick={add}>Add</Button>
-                        <Button
-                            onClick={() => {
-                                setOpen(false);
-                                setAssetId(aid)
-                            }}
-                        >
-                            Cancel
-                        </Button>
-                    </div>
-                </div>
-            );
-        }
+      
         if (action === "edit-emp") {
             return (
                 <div className="form-user ">
@@ -421,38 +245,38 @@ function ShowAssets() {
     }, [action, user]);
 
     return (
-        <div>
-                                            <div className="w-full max-w-4xl grid grid-cols-3 place-items-center px-2">
-                                    <TextField
-                                        className="w-full"
-                                        select
-                                        label="Asset"
-                                        value={search}
-                                        onChange={(e) => {
-                                            setSearch(e.target.value);
-                                        }}
-                                    >
+        <div className="h-full w-full flex flex-col gap-5 py-5">
+            <div className="w-full max-w-4xl grid grid-cols-3 place-items-center px-2">
+                <TextField
+                    className="w-full"
+                    select
+                    label="Asset"
+                    value={search}
+                    onChange={(e) => {
+                        setSearch(e.target.value);
+                    }}
+                >
 
-                                    </TextField>
-                                    <Button
-                                        variant="contained"
-                                        color="success"
-                                        onClick={load_data}
-                                    // setUsers(userslist);
-                                    >
-                                        <p className="text-[10px] md:text-base lg:text-xl">Search</p>
-                                    </Button>
-                                    <Button
-                                        variant="contained"
-                                        color="success"
-                                        onClick={() => {
+                </TextField>
+                <Button
+                    variant="contained"
+                    color="success"
+                    onClick={load_data}
+                // setUsers(userslist);
+                >
+                    <p className="text-[10px] md:text-base lg:text-xl">Search</p>
+                </Button>
+                <Button
+                    variant="contained"
+                    color="success"
+                    onClick={() => {
 
-                                            setShow(false);
-                                        }}
-                                    >
-                                        <p className="text-[10px] md:text-base lg:text-xl">Add Asset</p>
-                                    </Button>
-                                </div>
+                        setShow(false);
+                    }}
+                >
+                    <p className="text-[10px] md:text-base lg:text-xl">Add Asset</p>
+                </Button>
+            </div>
             <div className="w-11/12 mx-auto overflow-x-auto">
                 <table className="w-full">
                     <thead className="w-full" >
@@ -460,9 +284,8 @@ function ShowAssets() {
                             <th className="min-w-fit px-2">Asset ID</th>
                             <th className="min-w-fit px-2">State</th>
                             <th className="min-w-fit px-2">Location</th>
-                            <th className="min-w-fit px-2">Customer</th>
-                            <th className="min-w-fit px-2">Asset</th>
-                            <th className="min-w-fit px-2">Type</th>
+                            <th className="min-w-fit px-2">Customer</th>                       
+                            <th className="min-w-fit px-2">Asset Type</th>
                             <th className="min-w-fit px-2">Category</th>
                             <th className="min-w-fit px-2">Make Model</th>
                             <th className="min-w-fit px-2">Asset Serial No</th>
@@ -470,7 +293,7 @@ function ShowAssets() {
                             <th className="min-w-fit px-2">Usable Stock Status</th>
                             <th className="min-w-fit px-2">Remarks</th>
                             <th className="min-w-fit px-2">Date</th>
-                            <th className="min-w-fit px-2">Name of Audit Person</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
@@ -481,8 +304,7 @@ function ShowAssets() {
                                     <td className="min-w-fit px-2">{data.state}</td>
                                     <td className="min-w-fit px-2">{data.location}</td>
                                     <td className="min-w-fit px-2">{data.customer}</td>
-                                    <td className="min-w-fit px-2">{data.asset}</td>
-                                    <td className="min-w-fit px-2">{data.type}</td>
+                                    <td className="min-w-fit px-2">{data.asset_type}</td>
                                     <td className="min-w-fit px-2">{data.category}</td>
                                     <td className="min-w-fit px-2">{data.make_model}</td>
                                     <td className="min-w-fit px-2">{data.asset_serial_no}</td>
@@ -490,7 +312,7 @@ function ShowAssets() {
                                     <td className="min-w-fit px-2">{data.usable_stock_status}</td>
                                     <td className="min-w-fit px-2">{data.remarks}</td>
                                     <td className="min-w-fit px-2">{data.date}</td>
-                                    <td className="min-w-fit px-2">{data.name_of_audit_person}</td>
+                                  
 
 
                                     <td className="min-w-fit px-2">
@@ -519,4 +341,57 @@ function ShowAssets() {
                                 </tr>
                             );
                         })}
-                 
+                    </tbody>
+                </table>
+            </div>
+
+            <Modal
+                open={open}
+                onClose={() => {
+                    setOpen(false);
+                }}
+                placement="bottom"
+            >
+                <div>{returnForm()}</div>
+            </Modal>
+
+            <div>
+                <Dialog
+                    open={dialogopen}
+                    onClose={() => {
+                        setDialogopen(false);
+                    }}
+                    aria-labelledby="alert-dialog-title"
+                    aria-describedby="alert-dialog-description"
+                >
+                    <DialogContent>
+                        <DialogContentText id="alert-dialog-description">
+                            Are you sure want to delete?
+                        </DialogContentText>
+                    </DialogContent>
+                    <DialogActions>
+                        <Button
+                            onClick={() => {
+                                setDialogopen(false);
+                            }}
+                        >
+                            No
+                        </Button>
+                        <Button
+                            onClick={() => {
+                                deleteut();
+                                setDialogopen(false);
+                            }}
+                            autoFocus
+                        >
+                            Yes
+                        </Button>
+                    </DialogActions>
+                </Dialog>
+            </div>
+
+        </div>
+    )
+}
+
+export default ShowAssets

@@ -55,9 +55,9 @@ function Login() {
 
     try {
       let res = await api.get("view/");
-      // window.location.href = res.data.redirect_url;
+      window.location.href = res.data.redirect_url;
       // console.log(res)
-      window.location.pathname = "/dashboard/po";
+      // window.location.pathname = "/dashboard/po";
       
     } catch (error) {
       console.log(error)

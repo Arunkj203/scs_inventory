@@ -24,31 +24,16 @@ import userslist from "./data.json";
 function Assets() {
 
 
-    const [search, setSearch] = useState("");
+
 
     const [users, setUsers] = useState();
     const [user, setUser] = useState();
 
-    
+
     const [open, setOpen] = useState(false);
     const [ciropen, setcirOpen] = useState(false);
     const [show, setShow] = useState(true);
 
-    const [aid, setAId] = useState("");
-    const [assetId, setAssetId] = useState("");
-    const [state, setState] = useState("");
-    const [location, setLocation] = useState("");
-    const [customer, setCustomer] = useState("");
-    const [asset, setAsset] = useState("");
-    const [type, setType] = useState("");
-    const [category, setCategory] = useState("");
-    const [makeModel, setMakeModel] = useState("");
-    const [assetSerialNo, setAssetSerialNo] = useState("");
-    const [workingStatus, setWorkingStatus] = useState("");
-    const [usableStockStatus, setUsableStockStatus] = useState("");
-    const [remarks, setRemarks] = useState("");
-    const [date, setDate] = useState("");
-    const [auditPersonName, setAuditPersonName] = useState("");
 
 
     const [data, setData] = useState();
@@ -95,49 +80,49 @@ function Assets() {
         }
     };
 
-    let add = async (e) => {
-        e.preventDefault();
-        // var t_eid = cmps[cmp] + eid;
-        if (state && location && customer && asset && type && category && makeModel && assetSerialNo && workingStatus && usableStockStatus && remarks && date && auditPersonName) {
-            try {
-                const res = await api.post("assets/", {
-                    "asset_id": assetId,
-                    "state": state,
-                    "location": location,
-                    "customer": customer,
-                    "asset": asset,
-                    "type": type,
-                    "category": category,
-                    "make_model": makeModel,
-                    "asset_serial_no": assetSerialNo,
-                    "working_status": workingStatus,
-                    "usable_stock_status": usableStockStatus,
-                    "remarks": remarks,
-                    "date": date,
-                    "name_of_audit_person": auditPersonName
-                });
-                setAlertContent("Asset Added Successfully");
-                setType("success");
-                setOpenAlert(true);
-                load_data();
-                setOpen(false);
+    // let add = async (e) => {
+    //     e.preventDefault();
+    //     // var t_eid = cmps[cmp] + eid;
+    //     if (state && location && customer && asset && type && category && makeModel && assetSerialNo && workingStatus && usableStockStatus && remarks && date && auditPersonName) {
+    //         try {
+    //             const res = await api.post("assets/", {
+    //                 "asset_id": assetId,
+    //                 "state": state,
+    //                 "location": location,
+    //                 "customer": customer,
+    //             
+    //                 "asset_type": type,
+    //                 "category": category,
+    //                 "make_model": makeModel,
+    //                 "asset_serial_no": assetSerialNo,
+    //                 "working_status": workingStatus,
+    //                 "usable_stock_status": usableStockStatus,
+    //                 "remarks": remarks,
+    //                 "date": date,
+    //                 "name_of_audit_person": auditPersonName
+    //             });
+    //             setAlertContent("Asset Added Successfully");
+    //             setType("success");
+    //             setOpenAlert(true);
+    //             load_data();
+    //             setOpen(false);
 
-                if (formRef.current) {
-                    formRef.current.reset();
-                }
-            } catch (error) {
-                setAlertContent(error.response.data.detail);
-                setType("warning");
-                setOpenAlert(true);
-                timebar();
-            }
-        } else {
-            setAlertContent("Enter all Values");
-            setType("info");
-            setOpenAlert(true);
-            timebar();
-        }
-    };
+    //             if (formRef.current) {
+    //                 formRef.current.reset();
+    //             }
+    //         } catch (error) {
+    //             setAlertContent(error.response.data.detail);
+    //             setType("warning");
+    //             setOpenAlert(true);
+    //             timebar();
+    //         }
+    //     } else {
+    //         setAlertContent("Enter all Values");
+    //         setType("info");
+    //         setOpenAlert(true);
+    //         timebar();
+    //     }
+    // };
 
 
     let update = async () => {
@@ -204,43 +189,18 @@ function Assets() {
                 </p>
             </div>
             <div className="h-full w-full">
-                <div className="h-full w-full flex flex-col gap-5 py-5">
-
-                    {
-                        show ?
-                            <div>
 
 
-                                <ShowAssets />
-                            </div>
-                            : 
-                            <div>
-                                                                    <Button
-                                        variant="contained"
-                                        color="success"
-                                        onClick={load_data}
-                                    // setUsers(userslist);
-                                    >
-                                        <p className="text-[10px] md:text-base lg:text-xl">Search</p>
-                                    </Button>
-                                    <Button
-                                        variant="contained"
-                                        color="success"
-                                        onClick={() => {
-
-                                            setShow(false);
-                                        }}
-                                    >
-                                        <p className="text-[10px] md:text-base lg:text-xl">Add Asset</p>
-                                    </Button>
-                                    <AddAssets />
-                            </div>
-                          
-                    }
+                {
+                    show ?
+                        <ShowAssets load_data={load_data} setShow={setShow} />
+                        :
+                        <AddAssets setShow={setShow} />
+                }
 
 
 
-                </div>
+
 
             </div>
 
