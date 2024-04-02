@@ -26,9 +26,8 @@ tenant_id = '2a9ff279-ccfd-4a1c-927d-a135e08fa83b'
 
 
 redirect_uri = 'https://scs-inventory-1.onrender.com/login' 
-# 'http://localhost:8000/login'
-# https://scs-inventory-1.onrender.com/login
-# http://localhost:5173/callback is the redirect URI for this sample server. It
+#redirect_uri = 'http://localhost:8000/login'
+#redirect_uri = http://localhost:5173/callback          #is the redirect URI for this sample server. It
 
 
 

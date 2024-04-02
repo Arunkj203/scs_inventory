@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
   // baseURL: 'http://localhost:8000/ibob/',
-  baseURL: 'https://scs-inventory-1.onrender.com/'
+  baseURL: 'https://scs-inventory-1.onrender.com/ibob/'
   //   timeout: 10000, // Adjust the timeout as needed
 });
 
