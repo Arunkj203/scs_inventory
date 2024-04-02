@@ -1,12 +1,37 @@
 import axios from 'axios'
 import { InputAdornment, Alert, LinearProgress } from "@mui/material";
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Callback() {
 
     useEffect(() => {
         handlecallback()
     }, [])
+
+    let timebar = () => {
+        let progressTimeout;
+        let dismissTimeout;
+    
+        const startProgress = () => {
+          progressTimeout = setInterval(() => {
+            setProgress((prevProgress) => prevProgress + 10);
+          }, 300);
+        };
+    
+        const startDismissTimer = () => {
+          dismissTimeout = setTimeout(() => {
+            setOpenAlert(false);
+          }, 3000);
+        };
+    
+        startProgress();
+        startDismissTimer();
+    
+        return () => {
+          clearInterval(progressTimeout);
+          clearTimeout(dismissTimeout);
+        };
+      };
 
 
     const [openAlert, setOpenAlert] = useState(false);

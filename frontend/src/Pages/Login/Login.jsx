@@ -22,6 +22,8 @@ function Login() {
   const [progress, setProgress] = useState(100);
 
   const [open, setOpen] = useState(false);
+
+  
   const handleClose = () => {
     setOpen(false);
   };
