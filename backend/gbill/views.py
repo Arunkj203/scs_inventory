@@ -23,8 +23,16 @@ import io
 client_id = '7b333585-1a61-4b43-8346-176b4768deb0'
 client_secret = '2028Q~4DWTjozVmME52f0wl1bgyfvVIG1OuyOcyH'  #'zjd8Q~L2VLMRnux3wSY8a.KcBTidJWYf4hR1VdBQ'
 tenant_id = '2a9ff279-ccfd-4a1c-927d-a135e08fa83b'
-redirect_uri = 'http://localhost:8000/login'
+
+
+redirect_uri = 'https://scs-inventory-1.onrender.com/login' 
+# 'http://localhost:8000/login'
+# https://scs-inventory-1.onrender.com/login
 # http://localhost:5173/callback is the redirect URI for this sample server. It
+
+
+
+
 scope= ['user.read', 'Files.Read','Files.ReadWrite.All'] #scope= ['https://graph.microsoft.com/.default']   #'https://graph.microsoft.com/.default' 'user.read', 'Files.Read'
 authority = f'https://login.microsoftonline.com/{tenant_id}'
 
